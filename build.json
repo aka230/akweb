@@ -1,0 +1,15 @@
+{
+  "type": "rax",
+  "targets": [
+    "web"
+  ],
+  "plugins": [
+    "build-plugin-component"
+  ],
+  "enablePlatformLoader": true,
+  "htmlInjection": {
+    "headAppend": [
+      "<style>body { margin: 0 }</style>"
+    ]
+  }
+}
