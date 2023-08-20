@@ -1,0 +1,152 @@
+@import '../_common/css/themes.module.scss';
+
+.a-text {
+  position: relative;
+}
+
+.a-text-wrapper {
+  position: relative;
+}
+
+.a-text-block {
+  width: 100%;
+}
+
+.a-text-center {
+  text-align: center;
+}
+
+.a-text-left {
+  text-align: left;
+}
+
+.a-text-right {
+  text-align: right;
+}
+
+.a-text-background-color {
+  position: absolute;
+  bottom: 6rpx;
+  height: 24rpx;
+  display: block;
+  z-index: 0;
+}
+
+.a-text-line-through {
+  text-decoration: line-through;
+  text-decoration-color: #999;
+}
+
+.a-text-24 {
+  font-weight: 800;
+  font-family: $bold-family;
+  font-size: 48rpx;
+  color: $black86;
+  letter-spacing: 0;
+  line-height: 56rpx;
+}
+
+.a-text-20 {
+  font-weight: 800;
+  font-family: $bold-family;
+  font-size: 40rpx;
+  color: $black86;
+  letter-spacing: 0;
+  line-height: 56rpx;
+}
+
+.a-text-18 {
+  font-weight: 800;
+  font-family: $bold-family;
+  font-size: 36rpx;
+  color: $black86;
+  letter-spacing: 0;
+  line-height: 52rpx;
+}
+
+.a-text-16 {
+  font-weight: 800;
+  font-family: $bold-family;
+  font-size: 32rpx;
+  color: $black86;
+  letter-spacing: 0;
+  line-height: 48rpx;
+}
+
+.a-text-14 {
+  font-family: $normal-family;
+  font-size: 28rpx;
+  color: $black86;
+  letter-spacing: 0;
+  line-height: 44rpx;
+}
+
+.a-text-12 {
+  font-family: $normal-family;
+  font-size: 24rpx;
+  color: $black60;
+  letter-spacing: 0;
+  line-height: 32rpx;
+}
+
+.a-text-10 {
+  font-family: $bold-family;
+  font-size: 20rpx;
+  color: $black86;
+  letter-spacing: 0;
+  line-height: 28rpx;
+}
+
+.a-text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.a-text-link {
+  color: $primary-color;
+}
+
+.a-text-autowidth {
+  flex: 1;
+}
+
+.a-text-display {
+  visibility: hidden;
+}
+
+.a-text-relative {
+  position: relative;
+}
+
+.a-text-absolute {
+  position: absolute;
+}
+
+.a-text-suffix {
+  display: flex;
+  align-items: center;
+}
+
+.a-text-primary {
+  color: $primary-color;
+}
+
+.a-text-black86 {
+  color: $black86;
+  font-weight: 800;
+}
+
+.a-text-black60 {
+  color: $black60;
+}
+
+.a-text-black40 {
+  color: $black40;
+}
+
+.a-text-red {
+  color: $red-color;
+}
+
+.a-text-white {
+  color: $white-color;
+}
