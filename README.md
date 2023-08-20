@@ -29,9 +29,9 @@ import { Flex, Text, Image, Tab } from 'akweb';
 ## Example
 
 ```
-import { createElement, render } from 'rax';
-import DriverUniversal from 'driver-universal';
-import RaxExample from 'akweb';
+import { Flex, Text } from 'akweb';
 
-render(<RaxExample />, document.body, { driver: DriverUniversal });
+return (
+  <Flex><Text>TOM</Text><Text>JACK</Text><Text>LUCY</Text></Flex>
+);
 ```
