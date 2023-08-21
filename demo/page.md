@@ -6,10 +6,16 @@ order: 1
 Page usage
 
 ```jsx
-import { createElement } from 'rax';
-import { Page, Flex, Text } from 'akweb';
+import { createElement, createRef } from 'rax';
+import { Page, Flex, Text, Modal } from 'akweb';
 
 function App(){
+  const modalRef = createRef();
+
+  const handleClick = () => {
+    modalRef.current.show();
+  }
+
   return (
     <Page
       footer={<div>footer</div>}
@@ -17,7 +23,8 @@ function App(){
     <Flex backgroundColor="red">
       <Text size="14">TES</Text>
       <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
+      <Text size="14" onClick={() => handleClick()}>CLICK ME</Text>
+      <Modal ref={modalRef}><Text size="14">MODAL CONTENT</Text></Modal>
     </Flex>
       <Text size="14">TES</Text>
       <Text size="14">TES</Text>
