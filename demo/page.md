@@ -18,7 +18,7 @@ function App(){
 
   return (
     <Page
-      footer={<Flex><Button>CANCEL</Button><Button theme="primary" marginLeft="24rpx">SUBMIT</Button></Flex>}
+      footer={<Flex><Button>CANCEL</Button><Button theme="primary" marginLeft="24rpx" rightSlot={<Text>TEST</Text>}>SUBMIT</Button></Flex>}
       bodyStyle={{ padding: '24rpx' }}
     >
       <Card>
