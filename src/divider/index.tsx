@@ -27,6 +27,7 @@ function Divider(props: IDividerProps) {
       tmpStyle.marginTop = `${space}rpx`;
       tmpStyle.marginBottom = `${space}rpx`;
     }
+    return tmpStyle;
   }, [space, style]);
 
   return (

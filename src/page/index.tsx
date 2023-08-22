@@ -6,6 +6,7 @@ import './index.module.scss';
 interface PageProps {
   className?: string;
   style?: Rax.CSSProperties;
+  bodyStyle?: Rax.CSSProperties;
   footer?: () => Rax.RaxNode;
   footerClassName?: string;
   footerStyle?: Rax.CSSProperties;
@@ -13,7 +14,7 @@ interface PageProps {
 }
 
 function Page(props: PageProps) {
-  const { footer, children, className, style, footerClassName, footerStyle } = props;
+  const { footer, children, className, style, footerClassName, footerStyle, bodyStyle } = props;
 
   const classNames = useMemo(() => {
     return classnames([
@@ -50,8 +51,8 @@ function Page(props: PageProps) {
   };
 
   return (
-    <View className={classNames} styles={styles}>
-      <View className="page-body">{children}</View>
+    <View className={classNames} style={styles}>
+      <View className="page-body" style={bodyStyle}>{children}</View>
       {footerRender()}
     </View>
   );

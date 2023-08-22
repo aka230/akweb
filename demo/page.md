@@ -7,7 +7,7 @@ Page usage
 
 ```jsx
 import { createElement, createRef } from 'rax';
-import { Page, Flex, Text, Modal } from 'akweb';
+import { Page, Flex, Text, Modal, Divider, Card } from 'akweb';
 
 function App(){
   const modalRef = createRef();
@@ -19,42 +19,18 @@ function App(){
   return (
     <Page
       footer={<div>footer</div>}
+      bodyStyle={{ padding: '24rpx' }}
     >
-    <Flex backgroundColor="red">
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14" onClick={() => handleClick()}>CLICK ME</Text>
-      <Modal ref={modalRef}><Text size="14">MODAL CONTENT</Text></Modal>
-    </Flex>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
-      <Text size="14">TES</Text>
+      <Card>
+        <Flex>
+          <Text size="14">TES</Text>
+          <Text size="14">TES</Text>
+          <Text size="14" onClick={() => handleClick()}>CLICK ME</Text>
+          <Modal ref={modalRef}><Text size="14">MODAL CONTENT</Text></Modal>
+        </Flex>
+        <Divider space="18" />
+        <Text size="14">TES</Text>
+      </Card>
     </Page>
   );
 }

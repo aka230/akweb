@@ -1,0 +1,23 @@
+@import '../_common/css/themes.module.scss';
+@import '../_common/css/card.scss';
+
+.a-layout-card {
+  background-color: #fff;
+  border-radius: $card-border-radius;
+  padding: $card-padding;
+  display: block;
+}
+
+.a-layout-card-secondary {
+  background-color: $secondary-color;
+  border: 2rpx solid $primary-color-border;
+}
+
+.a-layout-card-gray {
+  background-color: $bg-gray;
+  border: 2rpx solid $border-gray;
+}
+
+.a-layout-shadow {
+  box-shadow: 0 0 60rpx rgba(0, 0, 0, 0.06);
+}
