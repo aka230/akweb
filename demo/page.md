@@ -7,7 +7,7 @@ Page usage
 
 ```jsx
 import { createElement, createRef } from 'rax';
-import { Page, Flex, Text, Modal, Divider, Card, Button } from 'akweb';
+import { Page, Flex, Text, Modal, Divider, Card, Button, Tag } from 'akweb';
 
 function App(){
   const modalRef = createRef();
@@ -18,7 +18,7 @@ function App(){
 
   return (
     <Page
-      footer={<Flex><Button>CANCEL</Button><Button theme="primary" marginLeft="24rpx" rightSlot={<Text>TEST</Text>}>SUBMIT</Button></Flex>}
+      footer={<Flex><Button>CANCEL</Button><Button theme="primary" marginLeft="24rpx" rightSlot={<Tag theme="red" marginTop="-16rpx">HOT</Tag>}>SUBMIT</Button></Flex>}
       bodyStyle={{ padding: '24rpx' }}
     >
       <Card>

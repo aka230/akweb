@@ -1,0 +1,72 @@
+@import '../_common/css/themes.module.scss';
+@import '../_common/css/tag.scss';
+
+.a-tag {
+  flex-direction: row;
+  background-color: $tag-background-color;
+  border-radius: $tag-border-radius;
+  padding: $tag-padding;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+.a-tag-block {
+  color: $tag-block-text-color;
+  background-color: $tag-block-background-color;
+  border-radius: 0;
+  padding: $tag-block-padding;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-tag-bg-primary {
+  background-color: $primary-color;
+}
+.a-tag-bg-secondary {
+  background-color: $secondary-color;
+}
+.a-tag-bg-default {
+  background-color: $bg-gray;
+}
+.a-tag-bg-red {
+  background-color: $red-color;
+}
+.a-tag-bg-orange {
+  background-color: $orange-color;
+}
+.a-tag-text-primary, .a-tag-text-red, .a-tag.text-orange {
+  color: #fff;
+}
+.a-tag-text-secondary {
+  color: $primary-color;
+}
+.a-tag-text-default {
+  color: $black40;
+}
+$custom-tag-text-size: 20rpx !default;
+
+.a-tag-custom {
+  .a-text {
+    font-size: $custom-tag-text-size;
+    line-height: 32rpx;
+  }
+}
+
+.a-tag-custom-primary {
+  .a-text {
+    color: #fff;
+  }
+}
+
+.a-tag-custom-secondary {
+  .a-text {
+    color: $primary-color;
+  }
+}
+
+.a-tag-custom-checked {
+  .a-text {
+    color: $primary-color;
+  }
+}
