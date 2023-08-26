@@ -15,7 +15,7 @@ interface IButtonProps extends IWrapProps {
   textSize?: TFontSize;
   theme?: TButtonTheme;
   disabled?: boolean;
-  children?: Rax.RaxNode;
+  children?: Rax.RaxElement | Rax.RaxNode;
   onClick?: (e: Event) => void;
 }
 

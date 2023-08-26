@@ -50,7 +50,7 @@ export interface IFlex extends IWrapProps {
   className?: string;
   style?: Rax.CSSProperties;
   onClick?: () => void;
-  children?: Rax.RaxNode;
+  children?: Rax.RaxElement | Rax.RaxNode;
 }
 
 function Flex(props: IFlex) {

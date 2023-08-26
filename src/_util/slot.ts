@@ -13,7 +13,7 @@ const slotKeys = [
   'rightTopSlot',
   'rightBottomSlot',
 ];
-export const getPlacementSlots = (props: any): {className: string; slot: Rax.RaxNode}[] => {
+export const getPlacementSlots = (props: any) => {
   const list: any[] = [];
   for (const key of slotKeys) {
     if (props[key]) {

@@ -19,12 +19,12 @@ interface ITextProps extends IWrapProps {
   ellipsis?: boolean;
   /** 超过自动省略行数 */
   lineClamp?: number;
-  leftSlot?: Rax.RaxNode;
-  rightSlot?: Rax.RaxNode;
+  leftSlot?: Rax.RaxElement | Rax.RaxNode;
+  rightSlot?: Rax.RaxElement | Rax.RaxNode;
   /** 下划线插槽 */
   underlineSlot?: boolean;
   align?: 'left' | 'center' | 'right';
-  children?: Rax.RaxNode;
+  children?: Rax.RaxElement | Rax.RaxNode;
   onClick?: () => void;
 }
 

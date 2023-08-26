@@ -7,10 +7,10 @@ export interface IPageProps {
   className?: string;
   style?: Rax.CSSProperties;
   bodyStyle?: Rax.CSSProperties;
-  footer?: () => Rax.RaxNode;
+  footer?: Rax.RaxElement | Rax.RaxNode;
   footerClassName?: string;
   footerStyle?: Rax.CSSProperties;
-  children?: Rax.RaxNode;
+  children?: Rax.RaxElement | Rax.RaxNode;
 }
 
 function Page(props: IPageProps) {

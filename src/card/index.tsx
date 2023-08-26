@@ -9,7 +9,7 @@ import './style/index.scss';
 interface ICard extends IWrapProps {
   theme?: TCardTheme;
   shadow?: boolean;
-  children?: Rax.RaxNode;
+  children?: Rax.RaxElement | Rax.RaxNode;
 }
 
 function Card(props: ICard) {

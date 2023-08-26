@@ -14,7 +14,7 @@ interface ITagProps extends IWrapProps {
   textSize?: TFontSize;
   theme?: TTagTheme;
   textColor?: string;
-  children?: Rax.RaxNode;
+  children?: Rax.RaxElement | Rax.RaxNode;
   onClick?: (e: Event) => void;
 }
 
