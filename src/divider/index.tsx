@@ -1,7 +1,7 @@
 import { createElement, useMemo } from 'rax';
 import View from 'rax-view';
 import classnames from 'classnames';
-import './index.scss';
+import './style/index.scss';
 
 interface IDividerProps {
   /** 是否虚线 */

@@ -4,7 +4,7 @@ import { IWrapProps } from '../_common/index.d';
 import css from '../_util/css';
 import classnames from 'classnames';
 import { TCardTheme } from '../_common/themes';
-import './index.scss';
+import './style/index.scss';
 
 interface ICard extends IWrapProps {
   theme?: TCardTheme;

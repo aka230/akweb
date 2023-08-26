@@ -1,3 +1,4 @@
+export type { IPageProps } from './page';
 export { default as Page } from './page';
 export { default as Flex } from './flex';
 export { default as Text } from './text';

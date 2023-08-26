@@ -1,9 +1,9 @@
 import { createElement, useMemo } from 'rax';
 import View from 'rax-view';
 import classnames from 'classnames';
-import './index.module.scss';
+import './style/index.scss';
 
-interface PageProps {
+export interface IPageProps {
   className?: string;
   style?: Rax.CSSProperties;
   bodyStyle?: Rax.CSSProperties;
@@ -13,7 +13,7 @@ interface PageProps {
   children?: Rax.RaxNode;
 }
 
-function Page(props: PageProps) {
+function Page(props: IPageProps) {
   const { footer, children, className, style, footerClassName, footerStyle, bodyStyle } = props;
 
   const classNames = useMemo(() => {

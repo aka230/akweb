@@ -6,7 +6,7 @@ import css from '../_util/css';
 import { isNode } from '../_util/raxValid';
 import { IWrapProps } from 'src/_common/index.d';
 import { TFontSize, TFontTheme } from '../_common/themes';
-import './index.module.scss';
+import './style/index.scss';
 
 interface ITextProps extends IWrapProps {
   size?: TFontSize;

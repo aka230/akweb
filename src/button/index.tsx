@@ -8,7 +8,7 @@ import { TButtonTheme, TFontSize } from '../_common/themes';
 import { getPlacementSlots } from '../_util/slot';
 // import Flex from '../flex';
 import Text from '../text';
-import './index.scss';
+import './style/index.scss';
 
 interface IButtonProps extends IWrapProps {
   size?: 'default' | 'small' | 'middle';

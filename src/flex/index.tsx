@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import css from '../_util/css';
 import { IWrapProps } from '../_common/index.d';
 
-import './index.module.scss';
+import './style/index.scss';
 
 export enum FlexDirection {
   'row' = 'row',
